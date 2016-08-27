@@ -53,7 +53,7 @@ function initialize()
 var a,b;
 	function moveMarker(map, marker){
 			//alert("reach1");
-		    var i=0, times=1900;
+		    var i=0, times=1500;
 		    function timer(){
 		    	j++;
 				a=p[j];
@@ -61,7 +61,7 @@ var a,b;
 				map.panTo(new google.maps.LatLng(a,b));
 				marker.setPosition(new google.maps.LatLng(a,b));		
 				i++;
-				if(i==1339)
+				if(i==1359)
 					alert("Limit reached");
 				if(i<times){
 			 		setTimeout(timer,50);
